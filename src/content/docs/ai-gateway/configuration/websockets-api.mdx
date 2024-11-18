@@ -6,7 +6,7 @@ sidebar:
     text: Beta
 ---
 
-The AI Gateway WebSockets API provides a single persistent connection, enabling continuous communication. By using WebSockets, you can establish a single connection for multiple AI requests, eliminating the need for repeated handshakes and TLS negotiations, which enhances performance and reduces latency. This API supports all AI providers connected to AI Gateway, including those that don't natively support WebSockets.
+The AI Gateway WebSockets API provides a single persistent connection, enabling continuous communication. By using WebSockets, you can establish a single connection for multiple AI requests, eliminating the need for repeated handshakes and TLS negotiations, which enhances performance and reduces latency. This API supports all AI providers connected to AI Gateway, including those that do not natively support WebSockets.
 
 ## When to use webSockets?
 
@@ -15,7 +15,7 @@ WebSockets are long-lived TCP connections that enable bi-directional, real-time 
 ## Key benefits
 
 - **Reduced Overhead**: Avoid overhead of repeated handshakes and TLS negotiations by maintaining a single, persistent connection.
-- **Provider Compatibility**: Works with all AI providers in AI Gateway. Even if your chosen provider doesn't support WebSockets, we handle it for you, managing the requests to your preferred AI provider.
+- **Provider Compatibility**: Works with all AI providers in AI Gateway. Even if your chosen provider does not support WebSockets, we handle it for you, managing the requests to your preferred AI provider.
 
 ## Setting up
 
@@ -121,7 +121,7 @@ After this initial message, all streaming chunks are relayed in real-time to the
 }
 ```
 
-Once all chunks for a request have been streamed, AI Gateway sends a final message to signal the request's completion. For added flexibility, this message includes all the metadata again, even though it was initially provided at the start of the streaming process.
+Once all chunks for a request have been streamed, AI Gateway sends a final message to signal the completion of the request. For added flexibility, this message includes all the metadata again, even though it was initially provided at the start of the streaming process.
 
 ```json
 {
