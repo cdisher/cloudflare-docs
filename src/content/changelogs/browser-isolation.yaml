@@ -5,6 +5,10 @@ productLink: "/cloudflare-one/policies/browser-isolation/"
 productArea: Cloudflare One
 productAreaLink: /cloudflare-one/changelog/
 entries:
+  - publish_date: "2024-11-20"
+    title: Improved non-English keyboard support
+    description: |-
+      Introduced support for non-English keyboard configurations in the remote browser, enhancing the global user experience.
   - publish_date: "2024-03-21"
     title: Removed third-party cookie dependencies
     description: |-
