@@ -5,6 +5,10 @@ productLink: "/cloudflare-one/policies/browser-isolation/"
 productArea: Cloudflare One
 productAreaLink: /cloudflare-one/changelog/
 entries:
+  - publish_date: "2025-01-29"
+    title: Independent Copy and Paste Configurations in the remote browser
+    description: |-
+      Customers can now choose to allow/disallow copy and paste as separate configurations in their isolation policy settings.
   - publish_date: "2024-11-21"
     title: Improved non-English keyboard support
     description: |-
